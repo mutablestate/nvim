@@ -35,6 +35,7 @@ opt('o', 'smartcase', true)                           -- Don't ignore case with 
 opt('o', 'splitbelow', true)                          -- Put new windows below current
 opt('o', 'splitright', true)                          -- Put new windows right of current
 opt('o', 'termguicolors', true)                       -- True color support
+opt('o', 'clipboard', 'unnamedplus')                  -- Use system clipboard when yanking
 opt('o', 'wildmode', 'list:longest')                  -- Command-line completion mode
 opt('w', 'list', true)                                -- Show some invisible characters (tabs...)
 opt('w', 'number', true)                              -- Print line number
