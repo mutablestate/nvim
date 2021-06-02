@@ -4,7 +4,6 @@ local paq = require'paq-nvim'.paq
 paq{'savq/paq-nvim', opt=true}
 
 -- EDITOR
-
 paq 'folke/tokyonight.nvim'
 paq{'neoclide/coc.nvim', branch='release'}
 paq 'ojroques/nvim-hardline'
@@ -14,6 +13,13 @@ paq 'tpope/vim-surround'
 paq 'junegunn/fzf'
 paq 'junegunn/fzf.vim'
 paq 'akinsho/nvim-toggleterm.lua'
+
+-- SESSION
+paq 'nvim-lua/popup.nvim'
+paq 'nvim-lua/plenary.nvim'
+paq 'nvim-telescope/telescope.nvim'
+paq 'rmagatti/session-lens'
+paq 'rmagatti/auto-session'
 
 -- LANGUAGE
 paq 'pangloss/vim-javascript'
