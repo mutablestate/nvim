@@ -14,11 +14,17 @@ Main languages supported:
 2. Run `nvim` in your terminal and `:PaqInstall`
 3. Install `ripgrep` and add the lines below to `.bashrc` or preference.
 
+
 ```
 export FZF_DEFAULT_COMMAND="rg --files --hidden --follow --no-ignore-vcs --glob '!{node_modules,.git}'"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 ```
 
+##  Conquer of Completion
+
+```
+:CocInstall coc-elixir coc-json coc-prettier coc-svelte coc-tsserver coc-vetur`
+```
 
 ## QoL Shortcuts
 

@@ -26,6 +26,7 @@ opt('b', 'smartindent', true)                         -- Insert indents automati
 opt('b', 'tabstop', indent)                           -- Number of spaces tabs count for
 opt('o', 'completeopt', 'menuone,noinsert,noselect')  -- Completion options (for deoplete)
 opt('o', 'hidden', true)                              -- Enable modified buffers in background
+opt('o', 'confirm', true)                             -- Demands confirmation before closing unsaved buffers
 opt('o', 'ignorecase', true)                          -- Ignore case
 opt('o', 'joinspaces', false)                         -- No double spaces with join after a dot
 opt('o', 'scrolloff', 4 )                             -- Lines of context

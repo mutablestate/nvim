@@ -13,6 +13,7 @@ paq 'tpope/vim-surround'
 paq 'junegunn/fzf'
 paq 'junegunn/fzf.vim'
 paq 'akinsho/nvim-toggleterm.lua'
+paq 'b3nj5m1n/kommentary'
 
 -- SESSION
 paq 'nvim-lua/popup.nvim'
@@ -26,6 +27,7 @@ paq 'pangloss/vim-javascript'
 paq{'evanleck/vim-svelte', branch='main'}
 paq 'leafOfTree/vim-vue-plugin'
 paq 'elixir-editors/vim-elixir'
+paq 'jparise/vim-graphql'
 
 -- LINT
 paq 'dense-analysis/ale'
@@ -58,6 +60,7 @@ require('hardline').setup {
     show_index = false,
   },
 }
+
 require("toggleterm").setup {
   size = vim.o.columns * 0.4,
   open_mapping = [[<c-\>]],
@@ -71,4 +74,9 @@ require("toggleterm").setup {
   close_on_exit = true,
   shell = vim.o.shell
 }
+
+require('kommentary.config').configure_language("default", {
+  prefer_single_line_comments = true,
+})
+
 
