@@ -1,36 +1,36 @@
 -- PACKAGE
-vim.cmd 'packadd paq-nvim'
-local paq = require'paq-nvim'.paq
-paq{'savq/paq-nvim', opt=true}
+
+require "paq" {
+  'savq/paq-nvim';
 
 -- EDITOR
-paq 'folke/tokyonight.nvim'
-paq{'neoclide/coc.nvim', branch='release'}
-paq 'ojroques/nvim-hardline'
-paq 'jiangmiao/auto-pairs'
-paq 'airblade/vim-gitgutter'
-paq 'tpope/vim-surround'
-paq 'junegunn/fzf'
-paq 'junegunn/fzf.vim'
-paq 'akinsho/nvim-toggleterm.lua'
-paq 'b3nj5m1n/kommentary'
+  'folke/tokyonight.nvim';
+  {'neoclide/coc.nvim', branch='release'};
+  'ojroques/nvim-hardline';
+  'jiangmiao/auto-pairs';
+  'airblade/vim-gitgutter';
+  'tpope/vim-surround';
+  'junegunn/fzf';
+  'junegunn/fzf.vim';
+  'akinsho/nvim-toggleterm.lua';
+  'b3nj5m1n/kommentary';
 
 -- SESSION
-paq 'nvim-lua/popup.nvim'
-paq 'nvim-lua/plenary.nvim'
-paq 'nvim-telescope/telescope.nvim'
-paq 'rmagatti/session-lens'
-paq 'rmagatti/auto-session'
+  'nvim-lua/popup.nvim';
+  'nvim-lua/plenary.nvim';
+  'nvim-telescope/telescope.nvim';
+  'rmagatti/session-lens';
+  'rmagatti/auto-session';
 
 -- LANGUAGE
-paq 'pangloss/vim-javascript'
-paq{'evanleck/vim-svelte', branch='main'}
-paq 'leafOfTree/vim-vue-plugin'
-paq 'elixir-editors/vim-elixir'
-paq 'jparise/vim-graphql'
+  'pangloss/vim-javascript';
+  {'evanleck/vim-svelte', branch='main'};
+  'elixir-editors/vim-elixir';
+  'jparise/vim-graphql';
 
 -- LINT
-paq 'dense-analysis/ale'
+  'dense-analysis/ale';
+}
 
 -- FORMAT
 vim.cmd "command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')"
