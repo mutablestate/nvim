@@ -23,13 +23,9 @@ require "paq" {
   'rmagatti/auto-session';
 
 -- LANGUAGE
-  'pangloss/vim-javascript';
-  {'evanleck/vim-svelte', branch='main'};
   'elixir-editors/vim-elixir';
   'jparise/vim-graphql';
-
--- LINT
-  'dense-analysis/ale';
+  'leafOfTree/vim-svelte-plugin';
 }
 
 -- FORMAT

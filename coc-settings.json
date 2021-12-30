@@ -1,11 +1,7 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": [
-    "css",
-    "Markdown",
-    "javascript",
-    "vue",
-    "svelte",
-    "html",
-    "json"
-  ]
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "svelte", "typescript", "json", "css"],
+  "eslint.autoFixOnSave": true,
+  "prettier.disableSuccessMessage": true,
+  "svelte.enable-ts-plugin": true
 }
+
