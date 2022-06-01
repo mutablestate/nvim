@@ -12,7 +12,7 @@ require "paq" {
   'tpope/vim-surround';
   'junegunn/fzf';
   'junegunn/fzf.vim';
-  'akinsho/nvim-toggleterm.lua';
+  'akinsho/toggleterm.nvim';
   'b3nj5m1n/kommentary';
 
 -- SESSION
@@ -74,5 +74,4 @@ require("toggleterm").setup {
 require('kommentary.config').configure_language("default", {
   prefer_single_line_comments = true,
 })
-
 
