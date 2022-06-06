@@ -11,20 +11,23 @@ Main languages supported:
 ## Setup
 
 1. Clone files to `~/.config/nvim`
-2. Run `nvim` in your terminal and `:PaqInstall`
-3. Install `ripgrep` and add the lines below to `.bashrc` or preference.
-
+3. Install `Paq` package manager `git clone --depth=1 https://github.com/savq/paq-nvim.git \
+    "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/pack/paqs/start/paq-nvim`
+4. Run `nvim` in your terminal and fetch packages `:PaqInstall`
+5. Install recursive search tool `sudo apt install ripgrep` and add the lines below to `.bashrc`
 
 ```
 export FZF_DEFAULT_COMMAND="rg --files --hidden --follow --no-ignore-vcs --glob '!{node_modules,.git}'"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 ```
 
-##  Conquer of Completion
+6. Add Conquer of Completion extensions
 
 ```
 :CocInstall coc-elixir coc-json coc-prettier coc-svelte coc-tsserver coc-vetur`
 ```
+
+7. Restart `nvim`
 
 ## QoL Shortcuts
 
